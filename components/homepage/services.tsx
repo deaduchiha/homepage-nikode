@@ -43,6 +43,7 @@ export default function Services() {
           const Icon = service.icon;
           return (
             <Link
+              role="button"
               key={service.name}
               to={service.url}
               className="group relative flex flex-col items-start gap-4 rounded-2xl bg-white dark:bg-gray-800 p-6 shadow-sm ring-1 ring-gray-200 dark:ring-gray-700 transition-all hover:shadow-md hover:ring-gray-300 dark:hover:ring-gray-600"
