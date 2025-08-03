@@ -1,7 +1,4 @@
-import Hero from "@/components/homepage/hero";
-import Services from "@/components/homepage/services";
 import type { Route } from "./+types/home";
-import Creator from "@/components/homepage/creator";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router";
 import { BookOpen, Database, Code2, ArrowUpRight } from "lucide-react";
