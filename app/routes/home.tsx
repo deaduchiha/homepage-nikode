@@ -7,6 +7,8 @@ export function meta({}: Route.MetaArgs) {
   return [
     { title: "nikode" },
     { name: "description", content: "learn with nikode" },
+    { name: "keywords", content: "nikode, learn, frontend, development" },
+    { name: "author", content: "Alireza Nikzad" },
   ];
 }
 
