@@ -1,6 +1,4 @@
-import React from "react";
-
-import { Circle, Code2 } from "lucide-react";
+import { Circle } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -15,7 +13,7 @@ export default function Hero() {
       </div>
 
       <p className="text-xl text-gray-600 dark:text-gray-400 mb-2">
-        Learn programming from zero to hero
+        Great work can be done with a continuity of small steps
       </p>
 
       <p className="text-sm text-gray-500 dark:text-gray-500 font-medium">

@@ -10,8 +10,10 @@ const services = [
     url: "https://learn.nikode.ir",
     domain: "learn.nikode.ir",
     icon: BookOpen,
-    iconBg: "bg-blue-50 dark:bg-blue-500/10",
-    iconColor: "text-blue-600 dark:text-blue-400",
+    bgColor: "bg-orange-50 dark:bg-orange-500/10",
+    borderColor: "border-orange-200 dark:border-orange-700",
+    iconBg: "bg-orange-100 dark:bg-orange-500/20",
+    iconColor: "text-orange-600 dark:text-orange-400",
   },
   {
     name: "API",
@@ -20,7 +22,9 @@ const services = [
     url: "https://api.nikode.ir",
     domain: "api.nikode.ir",
     icon: Database,
-    iconBg: "bg-green-50 dark:bg-green-500/10",
+    bgColor: "bg-green-50 dark:bg-green-500/10",
+    borderColor: "border-green-200 dark:border-green-700",
+    iconBg: "bg-green-100 dark:bg-green-500/20",
     iconColor: "text-green-600 dark:text-green-400",
   },
   {
@@ -30,7 +34,9 @@ const services = [
     url: "https://code.nikode.ir",
     domain: "code.nikode.ir",
     icon: Code,
-    iconBg: "bg-purple-50 dark:bg-purple-500/10",
+    bgColor: "bg-purple-50 dark:bg-purple-500/10",
+    borderColor: "border-purple-200 dark:border-purple-700",
+    iconBg: "bg-purple-100 dark:bg-purple-500/20",
     iconColor: "text-purple-600 dark:text-purple-400",
   },
 ];
@@ -46,7 +52,7 @@ export default function Services() {
               role="button"
               key={service.name}
               to={service.url}
-              className="group relative flex flex-col items-start gap-4 rounded-2xl bg-white dark:bg-gray-800 p-6 shadow-sm ring-1 ring-gray-200 dark:ring-gray-700 transition-all hover:shadow-md hover:ring-gray-300 dark:hover:ring-gray-600"
+              className={`group relative flex flex-col items-start gap-4 rounded-2xl ${service.bgColor} p-6 shadow-sm border-2 ${service.borderColor} transition-all hover:shadow-md hover:scale-105`}
             >
               <div className="flex items-center justify-between w-full">
                 <div
